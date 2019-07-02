@@ -6,6 +6,7 @@ class Header extends Component {
   };
 
   render(){
+    const { number } = this.state;
     return(
       <div className="navbar navbar-expand-lg navbar-dark bg-dark">
         <button
@@ -16,7 +17,7 @@ class Header extends Component {
           aria-controls="collapsed-navbar"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
         <a className="navbar-brand" href="/">Phone Number Generator</a>
         <div className="collapse navbar-collapse" id="collapsed-navbar">
@@ -34,7 +35,7 @@ class Header extends Component {
               type="search"
               aria-label="Search"
               placeholder="search number"
-              value={this.state.number}
+              value={number}
               onChange={event => this.setState({number: event.target.value})}
               />
             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "plugins": ["react", "prettier"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "react/jsx-filename-extension": [0],
+        "import/extensions": "off"
+    }
+}

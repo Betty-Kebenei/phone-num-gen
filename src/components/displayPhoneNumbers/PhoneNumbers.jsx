@@ -1,4 +1,4 @@
 import React from 'react';
 
-const PhoneNumbers = () => (<div></div>);
+const PhoneNumbers = () => (<div />);
 export default PhoneNumbers;

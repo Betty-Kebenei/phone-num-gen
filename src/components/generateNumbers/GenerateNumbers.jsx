@@ -1,4 +1,4 @@
 import React from 'react';
 
-const GenerateNumbers = () => (<div></div>);
+const GenerateNumbers = () => (<div/>);
 export default GenerateNumbers;

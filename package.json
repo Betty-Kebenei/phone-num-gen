@@ -17,7 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --coverage",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/*.js src/**/*.js src/**/*.jsx --quiet",
+    "check-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +37,23 @@
     ]
   },
   "devDependencies": {
-    "coveralls": "^3.0.4"
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint"
+    ]
   }
 }
