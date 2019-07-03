@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header component renders correctly 1`] = `
+<form>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="quantity"
+    >
+      How many numbers do you want to generate? 
+    </label>
+    <br />
+    <input
+      id="quantity"
+      max={1000}
+      min={10}
+      name="quantity"
+      required={true}
+      type="number"
+    />
+  </div>
+  <input
+    className="btn btn-primary"
+    type="submit"
+    value="Submit"
+  />
+</form>
+`;
