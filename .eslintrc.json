@@ -20,6 +20,13 @@
     },
     "rules": {
         "react/jsx-filename-extension": [0],
-        "import/extensions": "off"
+        "import/extensions": "off",
+        "jsx-a11y/label-has-for": [ 2, {
+            "components": [ "Label" ],
+            "required": {
+                "every": [ "id" ]
+            },
+            "allowChildren": false
+        }]
     }
 }

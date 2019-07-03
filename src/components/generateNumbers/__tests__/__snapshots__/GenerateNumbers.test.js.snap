@@ -1,3 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`header component renders correctly 1`] = `<div />`;
+exports[`GenerateNumber header component renders correctly 1`] = `
+<div
+  className="generator"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="quantity"
+      >
+        How many numbers do you want to generate? 
+      </label>
+      <br />
+      <input
+        id="quantity"
+        max={1000}
+        min={10}
+        name="quantity"
+        onChange={[Function]}
+        required={true}
+        type="number"
+        value={0}
+      />
+    </div>
+    <input
+      className="btn btn-primary"
+      type="submit"
+      value="Submit"
+    />
+  </form>
+</div>
+`;
