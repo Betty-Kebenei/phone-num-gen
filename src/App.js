@@ -10,7 +10,7 @@ const App = () => (
   <Router>
     <div>
       <Header />
-      <Route path="/" component={GenerateNumbers} />
+      <Route exact path="/" component={GenerateNumbers} />
       <Route path="/numbers" component={PhoneNumbers} />
     </div>
   </Router>

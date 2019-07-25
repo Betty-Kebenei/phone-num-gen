@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import DisplayCurrentGeneration from './DisplayCurrentGeneration';
+import DisplayNumbers from '../common/DisplayNumbers';
 import FormForGeneration from './FormForGeneration';
 
 class GenerateNumbers extends Component {
@@ -16,6 +16,7 @@ class GenerateNumbers extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { quantity } = this.state;
+    this.setState({phoneNumbers: ''});
     let i = 0;
     let existing;
     while(i<quantity){
@@ -26,9 +27,9 @@ class GenerateNumbers extends Component {
       }
       const currentNumber = arr.join('');
       existing = localStorage.getItem('phonenumbers');
-      existing = existing ? existing.split(',') : [];
+      existing = existing ? JSON.parse(existing) : [];
       existing.push(currentNumber);
-      localStorage.setItem('phonenumbers', existing.toString())
+      localStorage.setItem('phonenumbers', JSON.stringify(existing))
       this.setState(prevState => ({phoneNumbers: [...prevState.phoneNumbers, currentNumber]}));
       i += 1;
     }
@@ -43,7 +44,7 @@ class GenerateNumbers extends Component {
           onSubmit={this.handleSubmit}
           quantity={quantity}
         />
-        {phoneNumbers.length > 0 && <DisplayCurrentGeneration currentGeneration={phoneNumbers} />}
+        {phoneNumbers.length > 0 && <DisplayNumbers numbers={phoneNumbers} />}
       </div>
     )
   }
