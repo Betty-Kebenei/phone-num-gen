@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayNumbers component renders correctly 1`] = `
+<div
+  className="display-current-generation"
+/>
+`;
