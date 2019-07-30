@@ -1,0 +1,22 @@
+.page-not-found {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.page-text {
+  font-size: 7vw;
+  margin: 0;
+  color: #007bff;
+}
+
+.status-text {
+  font-size: 20vw;
+  margin: 0;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  background: #007bff;
+  color: #fff;
+}

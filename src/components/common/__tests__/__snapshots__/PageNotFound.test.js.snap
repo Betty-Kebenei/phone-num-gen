@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page not found renders correctly 1`] = `
+<div
+  className="page-not-found"
+>
+  <p
+    className="page-text"
+  >
+    Page Not Found
+  </p>
+  <p
+    className="status-text"
+  >
+    404
+  </p>
+  <p
+    className="go-text"
+  >
+    GO TO
+  </p>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Generate Numbers
+  </button>
+  <span
+    className="or-text"
+  >
+     OR 
+  </span>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    View All Numbers
+  </button>
+</div>
+`;
