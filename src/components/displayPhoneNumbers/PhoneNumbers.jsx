@@ -29,7 +29,7 @@ const PhoneNumbers = () => {
         <div className="all-numbers">
           {sortedNumbers.length < 10 && <p>There are no phone numbers that have been generated so far</p> }
           {sortedNumbers.length > 0 && <p>All Phone Numbers Generated</p> }
-          {sortedNumbers.length > 0 && <DisplayNumbers numbers={sortedNumbers} />}
+          {sortedNumbers.length > 0 && <DisplayNumbers numbers={sortedNumbers} pageCount={100} />}
         </div>
       </div>
     )

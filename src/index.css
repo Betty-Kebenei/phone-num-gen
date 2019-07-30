@@ -58,3 +58,22 @@ form input[type='submit'] {
   float: right;
   padding-bottom: 30px;
 }
+
+.paginate-numbers {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.paginate-numbers ul li{
+  border: 1px solid black;
+  width: 30px;
+}
+
+.paginate-numbers ul li a{
+  color: black;
+}
+
+.paginate-numbers ul li.active a {
+  color: #007bff;
+}

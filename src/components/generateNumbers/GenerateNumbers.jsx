@@ -92,7 +92,7 @@ class GenerateNumbers extends Component {
           onSubmit={this.handleSubmit}
           quantity={quantity}
         />
-        {phoneNumbers.length > 0 && <DisplayNumbers numbers={phoneNumbers} />}
+        {phoneNumbers.length > 0 && <DisplayNumbers numbers={phoneNumbers} pageCount={100} />}
       </div>
     )
   }
