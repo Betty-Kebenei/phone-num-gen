@@ -1,7 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DisplayNumbers component renders correctly 1`] = `
-<div
-  className="display-current-generation"
-/>
+exports[`DisplayNumbers DisplayNumbers component renders correctly 1`] = `
+<div>
+  <div
+    className="display-current-generation"
+  />
+  <div
+    className="paginate-numbers"
+  >
+    <ul
+      className="pagination"
+    >
+      <li
+        className="disabled"
+        onClick={[Function]}
+      >
+        <a
+          className=""
+          href="#"
+        >
+          «
+        </a>
+      </li>
+      <li
+        className="disabled"
+        onClick={[Function]}
+      >
+        <a
+          className=""
+          href="#"
+        >
+          ⟨
+        </a>
+      </li>
+      <li
+        className="disabled"
+        onClick={[Function]}
+      >
+        <a
+          className=""
+          href="#"
+        >
+          ⟩
+        </a>
+      </li>
+      <li
+        className="disabled"
+        onClick={[Function]}
+      >
+        <a
+          className=""
+          href="#"
+        >
+          »
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 `;
