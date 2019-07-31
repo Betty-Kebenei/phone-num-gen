@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
-import Header from './components/common/header';
+import Header from './components/common/Header';
 import GenerateNumbers from './components/generateNumbers/GenerateNumbers';
 import PhoneNumbers from './components/displayPhoneNumbers/PhoneNumbers';
 import PageNotFound from './components/common/PageNotFound';

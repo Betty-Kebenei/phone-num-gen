@@ -18,8 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage",
-    "coveralls": "jest --coverage --collectCoverageFrom=!src/serviceWorker.js && cat ./coverage/lcov.info | coveralls",
+    "test": "react-scripts test --env=jsdom --coverage -u",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "eject": "react-scripts eject",
     "lint": "eslint src/*.js src/**/*.js src/**/*.jsx --quiet",
     "check-staged": "lint-staged"
@@ -60,5 +60,13 @@
     "src/**/*.{js,jsx}": [
       "eslint"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/serviceWorker.js"
+      ]
   }
 }

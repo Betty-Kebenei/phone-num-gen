@@ -53,6 +53,7 @@ exports[`header component renders correctly 1`] = `
     </ul>
     <form
       className="form-inline my-2 my-lg-0"
+      onSubmit={[Function]}
     >
       <input
         aria-label="Search"
