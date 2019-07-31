@@ -1,3 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`header component renders correctly 1`] = `<div />`;
+exports[`phonenumber component renders correctly 1`] = `
+<div
+  className="displays"
+>
+  <div
+    className="summary"
+  >
+    <div>
+      <p>
+        Phone Number Generation Summary
+      </p>
+      <table>
+        <tr>
+          <th>
+            Total
+          </th>
+          <td>
+            0
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Maximum Number
+          </th>
+          <td />
+        </tr>
+        <tr>
+          <th>
+            Minimum
+          </th>
+          <td />
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div
+    className="all-numbers"
+  >
+    <p>
+      There are no phone numbers that have been generated so far
+    </p>
+  </div>
+</div>
+`;

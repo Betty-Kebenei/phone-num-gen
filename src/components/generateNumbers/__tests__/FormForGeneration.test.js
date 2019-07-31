@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Header from '../header';
+import FormForGeneration from '../FormForGeneration';
 
 test('header component renders correctly', () => {
-  const component = renderer.create(<Header />);
+  const component = renderer.create(<FormForGeneration />);
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
