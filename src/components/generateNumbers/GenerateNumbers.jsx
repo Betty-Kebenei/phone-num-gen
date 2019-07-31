@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 import DisplayNumbers from '../common/DisplayNumbers';
 import FormForGeneration from './FormForGeneration';
+import binarySearch from '../common/binarySearch';
 
 class GenerateNumbers extends Component {
   state = {
     quantity: 0,
-    phoneNumbers: [],
-    numberExists: false,
+    phoneNumbers: []
   }
 
   componentDidMount(){
@@ -41,9 +41,8 @@ class GenerateNumbers extends Component {
         const numbers = allNumbersArr.sort();
 
         // eslint-disable-next-line no-await-in-loop
-        await this.binarySearch(numbers, currentNumber);
-        const { numberExists } = this.state;
-        if(!numberExists){
+        const response = await binarySearch(numbers, currentNumber);
+        if(!response){
           this.addToLocalStorage(currentNumber);
           i += 1;
         }
@@ -62,25 +61,6 @@ class GenerateNumbers extends Component {
     existing.push(currentNumber);
     localStorage.setItem('phonenumbers', JSON.stringify(existing))
     this.setState(prevState => ({phoneNumbers: [...prevState.phoneNumbers, currentNumber]}));
-  }
-
-  binarySearch = (arr, key) => {
-    let startIndex = 0;
-    let endIndex = arr.length - 1;
-
-    while(startIndex <= endIndex) {
-      const mid = Math.floor((startIndex + endIndex) / 2);
-
-      if(key === arr[mid]) {
-        this.setState({numberExists: true})
-      }
-      else if(key > arr[mid]) {
-        startIndex = mid + 1;
-      }
-      else {
-        endIndex = mid - 1;
-      }
-    }
   }
 
   render(){

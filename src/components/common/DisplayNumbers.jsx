@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Pagination from 'react-js-pagination';
 
 class DisplayCurrentGeneration extends Component {
@@ -46,7 +45,5 @@ class DisplayCurrentGeneration extends Component {
   }
 
 }
-DisplayCurrentGeneration.propTypes = {
-  numbers: PropTypes.objectOf.isRequired
-}
+
 export default DisplayCurrentGeneration
