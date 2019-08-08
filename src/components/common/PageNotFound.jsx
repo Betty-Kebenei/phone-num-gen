@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../../styles/PageNotFound.css';
 
 const PageNotFound = (props) => (
@@ -22,9 +21,4 @@ const PageNotFound = (props) => (
     </button>
   </div>
 );
-
-PageNotFound.propTypes = {
-  history: PropTypes.objectOf.isRequired
-}
-
 export default PageNotFound;
