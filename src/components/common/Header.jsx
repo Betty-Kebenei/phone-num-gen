@@ -22,12 +22,16 @@ class Header extends Component {
         // eslint-disable-next-line no-alert
         alert('We are sorry!!! That number DOES NOT exists!')
       }
-      this.setState({number: ''})
+    } else {
+      // eslint-disable-next-line no-alert
+      alert('We are sorry!!! You have no numbers to search!')
     }
+    this.setState({number: ''})
   }
 
   render(){
     const { number } = this.state;
+    const currentRoute = window.location.pathname;
     return(
       <div className="navbar navbar-expand-lg navbar-dark bg-dark">
         <button
@@ -43,10 +47,10 @@ class Header extends Component {
         <a className="navbar-brand" href="/">Phone Number Generator</a>
         <div className="collapse navbar-collapse" id="collapsed-navbar">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
+            <li className={currentRoute === '/' ? "nav-item active" : "nav-item"}>
               <a className="nav-link" href="/">Generate Number</a>
             </li>
-            <li className="nav-item">
+            <li className={currentRoute === '/numbers' ? "nav-item active" : "nav-item"}>
               <a className="nav-link" href="/numbers">Phone Numbers</a>
             </li>
           </ul>
@@ -54,6 +58,7 @@ class Header extends Component {
             <input
               className="form-control mr-sm-2"
               type="search"
+              name="search"
               aria-label="Search"
               placeholder="search number"
               value={number}

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GenerateNumber header component renders correctly 1`] = `
+exports[`GenerateNumber GenerateNumber component renders correctly 1`] = `
 <div
   className="generator"
 >

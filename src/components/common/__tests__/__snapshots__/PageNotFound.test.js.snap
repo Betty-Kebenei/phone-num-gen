@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`page not found renders correctly 1`] = `
+exports[`PageNotFound page not found renders correctly 1`] = `
 <div
   className="page-not-found"
 >
@@ -20,6 +20,7 @@ exports[`page not found renders correctly 1`] = `
     GO TO
   </p>
   <button
+    id="generate"
     onClick={[Function]}
     type="button"
   >
@@ -31,6 +32,7 @@ exports[`page not found renders correctly 1`] = `
      OR 
   </span>
   <button
+    id="view"
     onClick={[Function]}
     type="button"
   >
