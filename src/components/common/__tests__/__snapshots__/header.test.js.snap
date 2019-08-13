@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`header component renders correctly 1`] = `
+exports[`Header header component renders correctly 1`] = `
 <div
   className="navbar navbar-expand-lg navbar-dark bg-dark"
 >
@@ -58,6 +58,7 @@ exports[`header component renders correctly 1`] = `
       <input
         aria-label="Search"
         className="form-control mr-sm-2"
+        name="search"
         onChange={[Function]}
         placeholder="search number"
         type="search"

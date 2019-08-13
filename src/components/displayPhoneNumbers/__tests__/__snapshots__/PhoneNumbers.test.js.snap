@@ -12,26 +12,28 @@ exports[`phonenumber component renders correctly 1`] = `
         Phone Number Generation Summary
       </p>
       <table>
-        <tr>
-          <th>
-            Total
-          </th>
-          <td>
-            0
-          </td>
-        </tr>
-        <tr>
-          <th>
-            Maximum Number
-          </th>
-          <td />
-        </tr>
-        <tr>
-          <th>
-            Minimum
-          </th>
-          <td />
-        </tr>
+        <tbody>
+          <tr>
+            <th>
+              Total
+            </th>
+            <td>
+              0
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Maximum Number
+            </th>
+            <td />
+          </tr>
+          <tr>
+            <th>
+              Minimum
+            </th>
+            <td />
+          </tr>
+        </tbody>
       </table>
     </div>
   </div>
