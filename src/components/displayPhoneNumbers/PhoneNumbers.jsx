@@ -11,18 +11,20 @@ const PhoneNumbers = () => {
           <div>
             <p>Phone Number Generation Summary</p>
             <table>
-              <tr>
-                <th>Total</th>
-                <td>{sortedNumbers.length}</td>
-              </tr>
-              <tr>
-                <th>Maximum Number</th>
-                <td>{sortedNumbers[sortedNumbers.length - 1]}</td>
-              </tr>
-              <tr>
-                <th>Minimum</th>
-                <td>{sortedNumbers[0]}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Total</th>
+                  <td>{sortedNumbers.length}</td>
+                </tr>
+                <tr>
+                  <th>Maximum Number</th>
+                  <td>{sortedNumbers[sortedNumbers.length - 1]}</td>
+                </tr>
+                <tr>
+                  <th>Minimum</th>
+                  <td>{sortedNumbers[0]}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
